@@ -22,4 +22,3 @@ if __name__ == '__main__':
                 'timp_preparare': trace['TP'].tolist()
                 }
         df = pd.DataFrame(dictionary)
-        
