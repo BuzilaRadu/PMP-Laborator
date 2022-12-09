@@ -24,8 +24,8 @@ if __name__ == '__main__':
             a.append(l)
         return a
 
-    row = 500
-    col = 1
+    row = 1
+    col = 500
 
     array = generate_random_array(row, col)
 
