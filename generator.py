@@ -3,16 +3,29 @@ import random
 
 def generate_random_array(row, col):
     a = []
-    for i in range(col):
+    for i in range(100):
         l = [i]
         for j in range(row):
-            l.append(random.sample(range(-10, 10), 2))
+            l.append(random.sample(range(-10, -5), 2))
         a.append(l)
+        
+    for i in range(200):
+        l = [i]
+        for j in range(row):
+            l.append(random.sample(range(-5, 5), 2))
+        a.append(l)
+        
+    for i in range(200):
+        l = [i]
+        for j in range(row):
+            l.append(random.sample(range(5, 10), 2))
+        a.append(l)
+        
     return a
 
 if __name__ == '__main__':
-    row = 500
-    col = 1
+    row = 1
+    col = 500
 
     array = generate_random_array(row, col)
 
